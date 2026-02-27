@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* Navbar Section */
+.navbar1 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.set-location {
+  background-color: red;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.navbar2 {
+  display: flex;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 30px;
+}
+
+.heading img {
+  width: 80px;
+}
+
+.menu, .deal {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu:hover,
+.deal:hover {
+  color: red;
+}
+.sign {
+  margin-left: auto;
+}
+
+.sign a {
+  text-decoration: none;
+  color: black;
+}
+
+.bucket img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: #f8f8f8;
+}
+
+.set-order {
+  background-color: red;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+ /* Menu Section */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+  background-color: aliceblue;
+}
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.checkmark {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: green;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scaleUp 0.4s ease;
+}
+/* ---------------- Search Bar ---------------- */
+.search-bar {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.search-bar input {
+  width: 300px;            
+  padding: 8px 12px;
+  border-radius: 25px;      
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s all;
+}
+
+.search-bar input:focus {
+  border-color: #ff0000;     
+  box-shadow: 0 0 5px rgba(255,0,0,0.5);
+}
+
+/* ---------------- Menu Grid ---------------- */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  padding: 10px;
+}
+
+/* ---------------- Card ---------------- */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 270px;
+  height: 400px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 20px 0 20px 0;
+  font-size: 16px;
+}
+
+.card p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.card button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.card button:hover {
+  background-color: #cc0000;
+}
+
+/* ---------------- Cart Panel ---------------- */
+.cart-panel {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart-details {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 5px 0;
+}
+
+.qty-control button {
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  color: black;
+}
+
+.order-btn, .close-btn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 20px;
+background-color: #cc0000;  
+  color: #fff;
+  cursor: pointer;
+}
+
+.order-btn:hover, .close-btn:hover {
+  background: green;
+}
+
+/* ---------------- Success Overlay ---------------- */
+.success-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.success-box {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 350px;
+}
+
+.success-box .checkmark {
+  font-size: 40px;
+  color: #4BB543;
+}
+
+.success-box h2 {
+  margin: 10px 0;
+}
+
+.success-box p {
+  margin: 5px 0;
+}
+
+.success-box button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.success-box button:hover {
+  background-color: #cc0000;
+}
+
+/* Offers Section */
+.ticket {
+  width: 90%;
+  margin: auto;
+}
+
+.ticket h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.offers-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.offer-card {
+  text-align: center;
+}
+
+.offer-card img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.offer-card h4 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.offer-card p {
+  margin: 6px 0;
+}
+
+.view {
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.apply-offer-btn {
+  margin-top: 10px;
+  padding: 10px 22px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.apply-offer-btn:hover {
+  opacity: 0.85;
+}
+
+.offer-banner {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e6fff1;
+  padding: 14px 22px;
+  border-radius: 12px;
+  color: #007a3d;
+  font-weight: 600;
+  width: fit-content;
+  z-index: 9999;
+
+  animation: slideDown 0.5s ease forwards;
+}
+
+.offer-banner span {
+  margin-left: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@keyframes slideDown {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+}
+
+/* Footer Section */
+.foot-panel {
+  background-color: #111;
+  color: #fff;
+  padding: 50px 0;
+  height: 300px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 60px;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container ul p {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.footer-container ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.footer-container ul li:hover {
+  color: #fff;
+}
+
+.download-app {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.download-app img {
+  width: 130px;
+  cursor: pointer;
+}
+
+
+
+
+
+
